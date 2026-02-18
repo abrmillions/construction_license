@@ -1,8 +1,0 @@
-import sqlite3
-DB='backend/db.sqlite3'
-conn=sqlite3.connect(DB)
-cur=conn.cursor()
-cur.execute("SELECT name FROM sqlite_master WHERE type='table' ORDER BY name")
-for row in cur.fetchall():
-    print(row[0])
-conn.close()
