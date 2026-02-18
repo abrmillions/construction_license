@@ -1,0 +1,8 @@
+{
+  "buildCommand": "pnpm install --no-frozen-lockfile && next build",
+  "outputDirectory": ".next",
+  "framework": "nextjs",
+  "env": {
+    "NEXT_PUBLIC_DJANGO_API_URL": "@next_public_django_api_url"
+  }
+}
